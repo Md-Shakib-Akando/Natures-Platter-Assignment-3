@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -125,7 +125,7 @@
         <!-- banner section -->
         <section class="flex justify-center flex-col items-center mt-14">
             <div>
-                <h1 class="text-5xl md:text-6xl font-semibold text-center text-black leading-tight	">
+                <h1 class="text-3xl md:text-6xl font-semibold text-center text-black leading-tight	">
                     Freshness <span class="text-[#179800]">You Can <br> Count</span> 
                      On, Prices You’ll Love!
                 </h1>
@@ -323,9 +323,9 @@
      </section>
         
      <!-- offer section -->
-      <section class="bg-white mt-28 px-4 lg:px-56">
+      <section class="relative bg-white mt-28 px-4 lg:px-56">
         <h1 class="text-3xl md:text-4xl font-semibold text-[#179800] pt-26 md:mb-12">Arrival & Offers</h1>
-        <div class="flex flex-col md:flex-row mt-12 gap-5 ">
+        <div class="flex flex-col md:flex-row mt-12 gap-5 pb-96">
             <div class="bg-[#115414] flex pt-9 md:w-7/12 md:items-center md:justify-center rounded-xl md:gap-20">
                 <div class=" ml-4">
                 <img class="" src="c2-assets/dawat-logo.png" alt="">
@@ -347,5 +347,44 @@
             </div>
         </div>
       </section>
+
+      <footer class="bg-[#179800] relative">
+        <div class="flex flex-col md:flex-row md:justify-around ml-5 pt-80 md:pb-40 md:px-28 text-white">
+            <div class="mt-9">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-base mt-4">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br class="hidden md:block"> friends</p>
+            </div>
+
+            <div class="flex flex-col gap-5 mt-9 mb-9 md:gap-8 text-base">
+                
+                    <a class="link link-hover">Product</a>
+                    <a class="link link-hover">Services</a>
+                    <a class="link link-hover">Contact us</a>
+                  
+            </div>
+            <div class="mb-7 md:mt-28">
+                <h1 class="mb-3">Social</h1>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram mx-3"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube ml-3"></i></a>
+            </div>
+        </div>
+
+        <!-- footer card -->
+         <div class="absolute -top-60 left-8 md:left-1 flex flex-col md:flex-row w-10/12  md:w-9/12 justify-center gap-6 md:gap-36 items-center p-3 md:py-14  bg-[#EFEBE3] rounded-xl  lg:mx-56">
+            <div><img class="w-60 md:w-full" src="c2-assets/vegetable-busket.png" alt=""></div>
+            <div class="flex flex-col md:justify-start md:items-start justify-center items-center">
+                <h1 class="text-2xl font-bold text-[#179800] md:text-black md:text-4xl md:font-semibold text-center md:text-left">Get Grocery News!</h1>
+                <p class="mb-5 mt-3 md:mt-6 md:mb-9 text-center md:text-left">Exclusive training tips, ticks, product deals and more.</p>
+
+                <input class="pt-5 pl-5 pb-5 w-full outline-none rounded-lg" type="email" name="" id="" placeholder="Enter email..">
+                
+                    <button class="btn text-xl mt-3 mb-6 md:mt-9 font-normal   px-7  bg-[#179800] text-white ">Subscribe</button>
+                
+            </div>
+         </div>
+      </footer>
+     
 </body>
 </html>
