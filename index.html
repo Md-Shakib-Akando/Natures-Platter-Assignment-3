@@ -17,9 +17,21 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
+    <style type="text/tailwindcss">
       .font-sora {
         font-family: "Sora", serif;
+      }
+      
+      .anim{
+        opacity: 0;
+        transform: translateY(30px);
+        animation: moveup 0.7s linear forwards;
+      }
+      @keyframes moveup{
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
       }
     </style>
     <script>
@@ -125,16 +137,16 @@
         <!-- banner section -->
         <section class="flex justify-center flex-col items-center mt-14">
             <div>
-                <h1 class="text-3xl md:text-6xl font-semibold text-center text-black leading-tight	">
+                <h1 class="text-3xl md:text-6xl font-semibold anim text-center text-black leading-tight	">
                     Freshness <span class="text-[#179800]">You Can <br> Count</span> 
                      On, Prices You’ll Love!
                 </h1>
-                <p class="text-center text-xl font-normal mt-8 mb-9">
+                <p class="text-center text-xl anim  font-normal mt-8 mb-9">
                     Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
                 </p>
             </div>
             <div>
-                <img src="c2-assets/hero-vegetables.png" alt="">
+                <img class="anim" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </section>
     </header>
@@ -151,7 +163,7 @@
                     24/7 Services 
                 </h1>
                 <p class="text-center text-lg text-[#4e4d4d]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    Offering 24/7 service for reliable, round-the-clock support, ensuring customer satisfaction anytime, day or night.
                 </p>
             </div>
 
@@ -161,7 +173,7 @@
                     Fast Delivery
                 </h1>
                 <p class="text-center text-lg text-[#4e4d4d]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    Fast delivery ensures quick, reliable, and efficient service with exceptional speed and customer satisfaction guaranteed.
                 </p>
             </div>
 
@@ -172,7 +184,7 @@
                     Healthy Products 
                 </h1>
                 <p class="text-center text-lg text-[#4e4d4d]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    Natural, healthy products made with high-quality, promoting wellness, vitality, and a balanced lifestyle.
                 </p>
             </div>
         </div>
@@ -180,8 +192,8 @@
     
     <!-- card section -->
      <section class="bg-[#EFEBE3] pb-12 md:pb-16">
-        <div class="mt-36 px-4 lg:px-56">
-            <h1  class="text-3xl md:text-4xl font-semibold text-[#179800] pt-36 md:mb-12">Popular Products</h1>
+        <div class="mt-16 md:mt-36 px-4 lg:px-56">
+            <h1  class="text-3xl md:text-4xl font-semibold text-[#179800] pt-16 pb-8 md:pt-36 md:mb-12">Popular Products</h1>
             <div class="flex gap-6 flex-col md:flex-row ">
                 <div class=" bg-white  rounded-md bg-gradient-to-br from-[#59c845] to-[#9fdc94] pl-5 pt-10 md:w-5/12">
                     
@@ -323,9 +335,9 @@
      </section>
         
      <!-- offer section -->
-      <section class="relative bg-white mt-28 px-4 lg:px-56">
+      <section class="relative bg-white mt-28 md:mb-36 mb-20 px-4 lg:px-56">
         <h1 class="text-3xl md:text-4xl font-semibold text-[#179800] pt-26 md:mb-12">Arrival & Offers</h1>
-        <div class="flex flex-col md:flex-row mt-12 gap-5 pb-96">
+        <div class="flex flex-col md:flex-row mt-12 gap-5 ">
             <div class="bg-[#115414] flex pt-9 md:w-7/12 md:items-center md:justify-center rounded-xl md:gap-20">
                 <div class=" ml-4">
                 <img class="" src="c2-assets/dawat-logo.png" alt="">
@@ -346,6 +358,120 @@
                 <img class=" md:pr-4 md:w-fit md:h-fit md:ml-8" src="c2-assets/india-gate-mock-up.png" alt="">
             </div>
         </div>
+      </section>
+
+      <section class=" mt-10 pb-72 md:pb-96 px-4 lg:px-56 ">
+        <h1 class="text-3xl md:text-4xl font-semibold text-[#179800] pt-26 md:mb-12">Customer Review</h1>
+        <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <blockquote>
+                            <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
+                                "The checkout process was smooth and hassle-free, Delivery was prompt,The customer service team was also quick to respond to my inquiries, which made the whole experience even better."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <blockquote>
+                            <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
+                                "I had the pleasure of trying Nature Platter, and it was an unforgettable experience! The assortment of fresh, organic ingredients was beautifully arranged, making it a feast not just for the stomach but for the eyes too."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Zisanul</div>
+                                
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <blockquote>
+                            <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
+                                "What impressed me the most was how versatile they were. From crispy fries to creamy mash, each dish turned out perfect. You can really tell these potatoes are high quality, with a rich, earthy flavor that’s hard to beat."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Km Joy</div>
+                                
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <blockquote>
+                            <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
+                                "I recently purchased fresh produce from [Fresh Food Company], and I couldn't be happier with the quality! The fruits and vegetables were incredibly vibrant, crisp, and tasted amazing. every item exceeded my expectations."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Akando</div>
+                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at TG</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
       </section>
 
       <footer class="bg-[#179800] relative">
